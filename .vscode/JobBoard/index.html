@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Experience Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>===== JOB EXPERIENCE BOARD =====</h1>
+    </header>
+
+    <main class="container">
+        <!-- Section to Create a Post -->
+        <section class="form-section">
+            <h2>1. Create a Post</h2>
+            <form id="postForm">
+                <div class="input-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="jobTitle">Job Title:</label>
+                    <input type="text" id="jobTitle" required>
+                </div>
+                <div class="input-group">
+                    <label for="company">Company/Workplace:</label>
+                    <input type="text" id="company" required>
+                </div>
+                <div class="input-group">
+                    <label for="workload">Workload (light, medium, heavy):</label>
+                    <input type="text" id="workload" required>
+                </div>
+                <div class="input-group">
+                    <label for="workspace">Describe the Workspace:</label>
+                    <input type="text" id="workspace" required>
+                </div>
+                <div class="input-group">
+                    <label for="experience">Describe your Experience:</label>
+                    <textarea id="experience" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Add Post</button>
+            </form>
+        </section>
+
+        <!-- Section to View All Posts -->
+        <section class="posts-section">
+            <h2>2. View All Posts</h2>
+            <div id="postsContainer">
+                <p class="no-posts">There are no posts yet.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
